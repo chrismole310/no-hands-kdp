@@ -1,0 +1,46 @@
+[
+  {
+    "title": "My First Novel",
+    "subtitle": "A Thrilling Adventure",
+    "series_name": "My Series",
+    "series_number": "1",
+    "author_first": "Jane",
+    "author_last": "Author",
+    "description": "A gripping tale of adventure and discovery. When protagonist faces impossible odds, they must use everything they've learned to survive. This novel combines heart-pounding action with deep character development in a near-future setting where technology and humanity collide.",
+    "keywords": [
+      "action adventure thriller",
+      "near future science fiction",
+      "technology thriller",
+      "strong protagonist fiction",
+      "page turner suspense",
+      "debut novel thriller",
+      "speculative fiction"
+    ],
+    "price_usd": "4.99",
+    "epub": "/absolute/path/to/my-first-novel.epub",
+    "cover": "/absolute/path/to/cover.jpg",
+    "ai_tool_text": "Claude (Anthropic)",
+    "ai_tool_images": "Midjourney"
+  },
+  {
+    "title": "My Second Novel",
+    "subtitle": "The Story Continues",
+    "series_name": "My Series",
+    "series_number": "2",
+    "author_first": "Jane",
+    "author_last": "Author",
+    "description": "The sequel that raises the stakes. Returning characters face new challenges as the world they thought they saved begins to unravel. With higher stakes and deeper mysteries, this second installment delivers on every promise of the first.",
+    "keywords": [
+      "sequel thriller",
+      "science fiction series",
+      "action adventure series",
+      "character driven thriller",
+      "world building fiction",
+      "page turner series",
+      "speculative fiction sequel"
+    ],
+    "price_usd": "4.99",
+    "epub": "/absolute/path/to/my-second-novel.epub",
+    "cover": "/absolute/path/to/cover2.jpg"
+  }
+]
