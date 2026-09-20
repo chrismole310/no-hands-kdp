@@ -36,7 +36,7 @@ Unopened items may be returned within 30 days for a refund of the item price. Op
 
 ## Shipping policy summary
 
-Orders ship from the United States within 1–2 business days by USPS Ground Advantage. Free shipping on orders of $35 or more; $4.95 below that. Holiday order-by dates are posted on the home page in December.
+Orders ship from the United States within 1–2 business days by USPS Ground Advantage. Free shipping on every bundle and on orders of $29.99 or more; $4.95 below that. Holiday order-by dates are posted on the home page in December.
 
 ## Trademark hygiene (internal)
 

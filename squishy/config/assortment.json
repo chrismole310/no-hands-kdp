@@ -1,7 +1,7 @@
 {
   "_comment": "Q4 2026 draft assortment. Costs are ESTIMATES from research/squishy-store/03 and 04 until supplier quotes arrive; set quote_status to 'quoted' and replace unit_cost when real. All Phase 1 SKUs must be authorised US wholesale stock that already carries a Children's Product Certificate (CPC).",
   "currency": "USD",
-  "free_shipping_threshold": 35.0,
+  "free_shipping_threshold": 29.99,
   "flat_shipping_below_threshold": 4.95,
   "age_grade_default": "6+",
   "skus": [

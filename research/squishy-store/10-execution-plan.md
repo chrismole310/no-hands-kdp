@@ -30,7 +30,7 @@ Claude Code can build and operate almost everything digital. A human is required
 
 1. Human: confirm entity, bank, and the Shopify store's billing status. Decision: revive the linked store or spin up a new one.
 2. Claude: run brand-name clearance on 5 candidate names (no "mallow", "squishable", "pop it"; avoid "squishies" as a brand); pick one that is free on TSDR, .com, TikTok and Instagram.
-3. Claude: build the store skeleton: theme, home, collections (Bundles, Mystery Bags, Desk Calm, Gifts under $30), policy pages, Prop 65 and 16 CFR 1500.19 choking warning blocks, shipping profile (free shipping at $35, flat $4.95 below).
+3. Claude: build the store skeleton: theme, home, collections (Bundles, Mystery Bags, Desk Calm, Gifts under $30), policy pages, Prop 65 and 16 CFR 1500.19 choking warning blocks, shipping profile (free shipping at $29.99, flat $4.95 below).
 4. Human: apply for Faire retailer account and, in parallel, contact ORB Toys (Tabalicious), Schylling (NeeDoh; distributors are being rationed, so may fail), RMS USA (Mystery Dumpling), Anboor, and TABASQUISHY B2B (MOQ 20/SKU, $500 minimum) for wholesale pricing and CPC copies.
 5. Claude: build the Q4 assortment plan: 8–12 SKUs, three bundle recipes, one mystery bag, with per-bundle contribution computed from actual quotes. Target landed cost at or below 40% of price for wholesale stock (best achievable without importing).
 6. Human: product-liability policy (~$500/yr), open TikTok Shop seller account, order $1,500–2,500 of stock and $300 of packaging.
