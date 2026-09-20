@@ -1,0 +1,306 @@
+<title>Deskloaf</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;800&display=swap">
+<style>
+:root{
+  --butter:#FFF3D6; --cream:#FFFBEE; --toast:#4A2C14; --toast-2:#7A4A22;
+  --orange:#FF7A1A; --pink:#FF5CA8; --matcha:#79D46F; --sky:#5CC8FF; --lemon:#FFD60A; --lilac:#C9A7FF;
+  --ink:var(--toast); --ground:var(--butter); --card:var(--cream); --line:var(--toast);
+  --shadow:6px 6px 0 var(--toast);
+  --display:'Fredoka','Baloo 2','Arial Rounded MT Bold',system-ui,sans-serif;
+  --body:'Nunito','Segoe UI',system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){ --ground:#2A180A; --card:#3A2412; --ink:#FFF3D6; --line:#FFF3D6; --shadow:6px 6px 0 #FFD60A; }
+}
+:root[data-theme="dark"]{ --ground:#2A180A; --card:#3A2412; --ink:#FFF3D6; --line:#FFF3D6; --shadow:6px 6px 0 #FFD60A; }
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5}
+h1,h2,h3{font-family:var(--display);line-height:1.02;margin:0;text-wrap:balance;letter-spacing:-.01em}
+h1{font-size:clamp(2.6rem,8.5vw,6.2rem);font-weight:700}
+h2{font-size:clamp(2rem,5.5vw,3.6rem);font-weight:700}
+h3{font-size:1.35rem;font-weight:600}
+p{margin:0}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:20px}
+.eyebrow{font-family:var(--display);font-weight:600;text-transform:uppercase;letter-spacing:.14em;font-size:.78rem}
+.btn{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--display);font-weight:600;font-size:1.05rem;padding:.85rem 1.4rem;border:3px solid var(--line);border-radius:999px;background:var(--lemon);color:var(--toast);text-decoration:none;box-shadow:var(--shadow);transition:transform .12s,box-shadow .12s;cursor:pointer}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--line)}
+.btn:active{transform:translate(3px,3px);box-shadow:2px 2px 0 var(--line)}
+.btn:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
+.btn.pink{background:var(--pink);color:#fff}
+.btn.ghost{background:var(--card);color:var(--ink)}
+
+/* marquee */
+.marq{background:var(--toast);color:var(--butter);border-bottom:3px solid var(--toast);overflow:hidden;white-space:nowrap;padding-block:.55rem;font-family:var(--display);font-weight:600;font-size:.95rem}
+.marq span{display:inline-block;padding-inline:1.2rem;animation:slide 28s linear infinite}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.marq span{animation:none}}
+
+/* header */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--ground);border-bottom:3px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.9rem}
+.logo{display:flex;align-items:center;gap:.6rem;font-family:var(--display);font-weight:700;font-size:1.55rem;text-decoration:none}
+.logo svg{width:40px;height:40px}
+.nav ul{display:flex;gap:1.2rem;list-style:none;margin:0;padding:0;font-weight:800;font-size:.95rem}
+.nav ul a{text-decoration:none}
+.nav .cart{border:3px solid var(--line);border-radius:999px;padding:.35rem .9rem;background:var(--matcha);color:var(--toast);font-family:var(--display);font-weight:600;text-decoration:none}
+@media (max-width:760px){.nav ul{display:none}}
+
+/* hero */
+.hero{padding-block:2.5rem 3rem}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:center}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr}}
+.hero .sticker{display:inline-block;background:var(--pink);color:#fff;border:3px solid var(--line);border-radius:999px;padding:.35rem .9rem;transform:rotate(-3deg);font-family:var(--display);font-weight:600;box-shadow:4px 4px 0 var(--line);margin-bottom:1.2rem}
+.hero p.lede{font-size:1.2rem;max-width:34rem;margin-block:1.2rem 1.6rem;font-weight:600}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:.9rem;align-items:center}
+.hero .fine{font-size:.9rem;font-weight:800;margin-top:1rem;opacity:.85}
+.stage{position:relative;background:var(--orange);border:3px solid var(--line);border-radius:28px;box-shadow:var(--shadow);padding:1.4rem;min-height:340px;display:grid;place-items:center;overflow:hidden}
+.stage .blob{width:min(78%,300px);aspect-ratio:1;max-width:100%;transform-origin:50% 100%;transition:transform .09s ease-out;cursor:pointer;user-select:none;-webkit-user-select:none;touch-action:none}
+.stage .blob.squish{transform:scaleY(.42) scaleX(1.28)}
+.stage .blob.rebound{transition:transform 3.2s cubic-bezier(.2,1.6,.3,1)}
+.stage .hint{position:absolute;left:1rem;bottom:1rem;background:var(--butter);color:var(--toast);border:3px solid var(--toast);border-radius:999px;padding:.35rem .8rem;font-family:var(--display);font-weight:600;font-size:.9rem}
+.stage .tag{position:absolute;right:1rem;top:1rem;background:var(--lemon);color:var(--toast);border:3px solid var(--toast);border-radius:12px;padding:.3rem .7rem;font-family:var(--display);font-weight:700;transform:rotate(6deg)}
+.dots{position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.35) 2px,transparent 2.5px);background-size:22px 22px;pointer-events:none}
+
+/* bundles */
+.section{padding-block:3.2rem}
+.sec-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:1rem;margin-bottom:1.6rem}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
+@media (max-width:1000px){.cards{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.cards{grid-template-columns:1fr}}
+.card{background:var(--card);border:3px solid var(--line);border-radius:22px;box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column;transition:transform .15s}
+.card:hover{transform:translateY(-4px) rotate(-.6deg)}
+.card .art{aspect-ratio:1;max-width:100%;display:grid;place-items:center;border-bottom:3px solid var(--line);position:relative}
+.card .art svg{width:70%;height:70%}
+.card .badge{position:absolute;top:.8rem;left:.8rem;background:var(--butter);color:var(--toast);border:3px solid var(--toast);border-radius:999px;padding:.2rem .7rem;font-family:var(--display);font-weight:600;font-size:.8rem}
+.card .body{padding:1rem 1.1rem 1.2rem;display:flex;flex-direction:column;gap:.5rem;flex:1}
+.card .price{font-family:var(--display);font-weight:700;font-size:1.5rem;font-variant-numeric:tabular-nums}
+.card .inc{font-size:.9rem;opacity:.9;margin:0;padding-left:1.1rem}
+.card .btn{margin-top:auto;align-self:flex-start;font-size:.95rem;padding:.6rem 1.1rem;box-shadow:4px 4px 0 var(--line)}
+.bg-pink{background:var(--pink)}.bg-matcha{background:var(--matcha)}.bg-sky{background:var(--sky)}.bg-lemon{background:var(--lemon)}.bg-lilac{background:var(--lilac)}.bg-orange{background:var(--orange)}
+
+/* taba demo */
+.taba{background:var(--sky);border-block:3px solid var(--line)}
+.taba .wrap{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center}
+@media (max-width:860px){.taba .wrap{grid-template-columns:1fr}}
+.taba h2,.taba p,.taba .eyebrow{color:var(--toast)}
+.meter{margin-top:1.2rem;background:var(--butter);border:3px solid var(--toast);border-radius:14px;padding:1rem;color:var(--toast)}
+.meter .bar{height:18px;border:3px solid var(--toast);border-radius:999px;background:#fff;overflow:hidden;margin-top:.5rem}
+.meter .fill{height:100%;width:100%;background:var(--pink);transition:width .1s linear}
+.meter .row{display:flex;justify-content:space-between;font-weight:800;font-size:.9rem;font-variant-numeric:tabular-nums}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin-top:1.2rem}
+.vs div{background:var(--butter);color:var(--toast);border:3px solid var(--toast);border-radius:14px;padding:.8rem 1rem;font-weight:800}
+.vs div span{display:block;font-family:var(--display);font-weight:700;font-size:1.15rem}
+
+/* personas */
+.people{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+@media (max-width:860px){.people{grid-template-columns:1fr}}
+.person{border:3px solid var(--line);border-radius:22px;padding:1.4rem;box-shadow:var(--shadow);color:var(--toast);display:flex;flex-direction:column;gap:.6rem}
+.person .who{font-family:var(--display);font-weight:700;font-size:1.6rem;line-height:1.05}
+.person .buys{font-weight:800;font-size:.9rem;text-transform:uppercase;letter-spacing:.08em;opacity:.8}
+.person .pick{margin-top:auto;padding-top:.6rem;border-top:3px dashed var(--toast);font-weight:800}
+
+/* mystery */
+.mystery{background:var(--lilac);border-block:3px solid var(--line)}
+.mystery .wrap{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center}
+@media (max-width:860px){.mystery .wrap{grid-template-columns:1fr}}
+.mystery h2,.mystery p,.mystery .eyebrow{color:var(--toast)}
+.bag{background:var(--pink);border:3px solid var(--toast);border-radius:28px;box-shadow:6px 6px 0 var(--toast);padding:1.6rem;display:grid;place-items:center;min-height:260px;position:relative;overflow:hidden}
+.bag .q{font-family:var(--display);font-weight:700;font-size:clamp(5rem,16vw,9rem);color:var(--butter);line-height:1;text-shadow:5px 5px 0 var(--toast)}
+.bag .b{position:absolute;bottom:1rem;left:1rem;right:1rem;display:flex;justify-content:space-between;font-family:var(--display);font-weight:600;color:var(--toast);font-size:.9rem}
+
+/* certified */
+.cert{background:var(--toast);color:var(--butter)}
+.cert .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+@media (max-width:860px){.cert .wrap{grid-template-columns:1fr}}
+.cert h3{color:var(--lemon);font-size:1.5rem}
+.cert p{opacity:.92}
+
+/* signup */
+.signup{text-align:center}
+.signup form{display:flex;gap:.7rem;justify-content:center;flex-wrap:wrap;margin-top:1.3rem}
+.signup input{font:inherit;font-weight:700;padding:.85rem 1.1rem;border:3px solid var(--line);border-radius:999px;min-width:min(320px,100%);background:var(--card);color:var(--ink)}
+
+footer{border-top:3px solid var(--line);padding-block:2rem 3rem;font-size:.85rem}
+footer .cols{display:flex;flex-wrap:wrap;gap:2rem;justify-content:space-between}
+footer ul{list-style:none;padding:0;margin:.4rem 0 0;display:grid;gap:.25rem;font-weight:800}
+footer .legal{margin-top:1.6rem;opacity:.85;max-width:70rem}
+</style>
+
+<div class="marq" aria-hidden="true"><span>FREE US SHIPPING ON EVERY BUNDLE &nbsp;✦&nbsp; CERTIFIED, LAB-TESTED SQUISHIES &nbsp;✦&nbsp; SHIPS IN 1–2 DAYS &nbsp;✦&nbsp; 10% OFF YOUR FIRST LOAF: LOAF10 &nbsp;✦&nbsp; FREE US SHIPPING ON EVERY BUNDLE &nbsp;✦&nbsp; CERTIFIED, LAB-TESTED SQUISHIES &nbsp;✦&nbsp; SHIPS IN 1–2 DAYS &nbsp;✦&nbsp; 10% OFF YOUR FIRST LOAF: LOAF10 &nbsp;✦&nbsp;</span></div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="Deskloaf home">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><ellipse cx="32" cy="40" rx="26" ry="18" fill="#B5763A" stroke="#4A2C14" stroke-width="3"/><ellipse cx="32" cy="36" rx="20" ry="12" fill="#D79A5A"/><circle cx="24" cy="36" r="2.4" fill="#4A2C14"/><circle cx="40" cy="36" r="2.4" fill="#4A2C14"/><ellipse cx="32" cy="42" rx="4.5" ry="3" fill="#4A2C14"/><ellipse cx="17" cy="27" rx="4" ry="5" fill="#B5763A" stroke="#4A2C14" stroke-width="3"/><ellipse cx="47" cy="27" rx="4" ry="5" fill="#B5763A" stroke="#4A2C14" stroke-width="3"/></svg>
+      Deskloaf
+    </a>
+    <ul><li><a href="#bundles">Bundles</a></li><li><a href="#mystery">Mystery Bags</a></li><li><a href="#taba">Taba 101</a></li><li><a href="#who">Who it's for</a></li><li><a href="#safety">Safety</a></li></ul>
+    <a class="cart" href="#bundles">Cart · 0</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="sticker">New for desks everywhere</div>
+      <h1>Squishies for grown‑up desks.</h1>
+      <p class="lede">Slow‑rebound silicone tabas, jumbo slow‑rise pastries and one very calm capybara. Curated into three‑piece sets, tested to US toy safety standards, shipped free.</p>
+      <div class="ctas">
+        <a class="btn" href="#bundles">Shop bundles</a>
+        <a class="btn pink" href="#mystery">Mystery bag · $29.99</a>
+      </div>
+      <p class="fine">Ages 6+. We assume you ordered it for yourself.</p>
+    </div>
+    <div class="stage" aria-label="Interactive squish demo">
+      <div class="dots"></div>
+      <div class="tag">press &amp; hold</div>
+      <svg id="blob" class="blob" viewBox="0 0 200 200" role="img" aria-label="Capybara loaf squishy. Press and hold to squish.">
+        <ellipse cx="100" cy="150" rx="86" ry="20" fill="rgba(74,44,20,.25)"/>
+        <path d="M22 140c0-50 30-88 78-88s78 38 78 88c0 20-20 28-78 28S22 160 22 140z" fill="#C98A4B" stroke="#4A2C14" stroke-width="5"/>
+        <path d="M46 132c6-36 26-58 54-58s48 22 54 58" fill="#E3AE73"/>
+        <ellipse cx="42" cy="78" rx="10" ry="13" fill="#C98A4B" stroke="#4A2C14" stroke-width="5"/>
+        <ellipse cx="158" cy="78" rx="10" ry="13" fill="#C98A4B" stroke="#4A2C14" stroke-width="5"/>
+        <path d="M66 108q8-8 16 0" stroke="#4A2C14" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <path d="M118 108q8-8 16 0" stroke="#4A2C14" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <ellipse cx="100" cy="128" rx="14" ry="9" fill="#4A2C14"/>
+        <circle cx="60" cy="122" r="7" fill="#FF5CA8" opacity=".8"/><circle cx="140" cy="122" r="7" fill="#FF5CA8" opacity=".8"/>
+      </svg>
+      <div class="hint" id="hint">Hold it. Then let go.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="bundles">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><div class="eyebrow">Bundles</div><h2>Three that go together. Never thirty at random.</h2></div>
+      <a class="btn ghost" href="#bundles">All bundles</a>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <div class="art bg-matcha"><span class="badge">Best for desks</span>
+          <svg viewBox="0 0 120 120" aria-hidden="true"><path d="M14 84c0-30 18-52 46-52s46 22 46 52c0 12-12 16-46 16S14 96 14 84z" fill="#C98A4B" stroke="#4A2C14" stroke-width="4"/><circle cx="44" cy="70" r="3" fill="#4A2C14"/><circle cx="76" cy="70" r="3" fill="#4A2C14"/><ellipse cx="60" cy="82" rx="8" ry="5" fill="#4A2C14"/></svg></div>
+        <div class="body"><h3>Desk Calm Trio</h3><div class="price">$34.99</div>
+          <ul class="inc"><li>Capybara taba squishy</li><li>Steamed bun taba</li><li>Articulated fidget slug</li></ul>
+          <a class="btn" href="#">Add to cart</a></div>
+      </article>
+      <article class="card">
+        <div class="art bg-pink"><span class="badge">Food squishies</span>
+          <svg viewBox="0 0 120 120" aria-hidden="true"><path d="M20 78c10-30 30-44 46-40s30 26 34 46c-20 10-60 12-80-6z" fill="#F2B76B" stroke="#4A2C14" stroke-width="4"/><path d="M34 70c8-14 18-22 30-22" stroke="#4A2C14" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M48 80c8-14 18-22 30-22" stroke="#4A2C14" stroke-width="4" fill="none" stroke-linecap="round"/></svg></div>
+        <div class="body"><h3>Snack Shelf Set</h3><div class="price">$36.99</div>
+          <ul class="inc"><li>Jumbo croissant, 25 cm</li><li>Mystery dumpling (blind bag)</li><li>Pudding taba</li></ul>
+          <a class="btn" href="#">Add to cart</a></div>
+      </article>
+      <article class="card">
+        <div class="art bg-lemon"><span class="badge">Gift‑wrapped</span>
+          <svg viewBox="0 0 120 120" aria-hidden="true"><rect x="22" y="44" width="76" height="56" rx="8" fill="#FF7A1A" stroke="#4A2C14" stroke-width="4"/><rect x="54" y="44" width="12" height="56" fill="#5CC8FF" stroke="#4A2C14" stroke-width="4"/><path d="M60 44c-16-4-22-18-10-22s14 14 10 22zm0 0c16-4 22-18 10-22s-14 14-10 22z" fill="#FF5CA8" stroke="#4A2C14" stroke-width="4"/></svg></div>
+        <div class="body"><h3>Gift Under $30</h3><div class="price">$29.99</div>
+          <ul class="inc"><li>Capybara taba squishy</li><li>Matching capybara bag charm</li><li>Kawaii food sticker sheet</li></ul>
+          <a class="btn" href="#">Add to cart</a></div>
+      </article>
+      <article class="card">
+        <div class="art bg-sky"><span class="badge">Blind bag</span>
+          <svg viewBox="0 0 120 120" aria-hidden="true"><path d="M30 40h60l8 62H22z" fill="#C9A7FF" stroke="#4A2C14" stroke-width="4"/><path d="M42 40c0-14 8-22 18-22s18 8 18 22" stroke="#4A2C14" stroke-width="4" fill="none"/><text x="60" y="86" text-anchor="middle" font-family="Fredoka, Arial Rounded MT Bold, sans-serif" font-weight="700" font-size="40" fill="#4A2C14">?</text></svg></div>
+        <div class="body"><h3>Mystery Squish Bag</h3><div class="price">$29.99</div>
+          <ul class="inc"><li>Two small tabas</li><li>One capybara bag charm</li><li>No duplicates in a bag</li></ul>
+          <a class="btn" href="#">Add to cart</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section taba" id="taba">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Taba 101</div>
+      <h2>Silicone that squishes like dough and comes back every time.</h2>
+      <p style="margin-top:1rem;font-weight:600">Taba squishies are cast silicone, not foam. They stick slightly to your fingers, stretch, and rebound slowly. Foam cracks in months. Silicone doesn't. That's why we lead with them.</p>
+      <div class="vs">
+        <div><span>Taba (silicone)</span>Slow rebound, stays tacky, no cracking</div>
+        <div><span>Classic foam</span>Fast rise, dries out, cracks by spring</div>
+      </div>
+    </div>
+    <div class="meter" aria-live="polite">
+      <div class="eyebrow">Rebound meter</div>
+      <div class="row"><span>Squished</span><span id="pct">100% risen</span></div>
+      <div class="bar"><div class="fill" id="fill"></div></div>
+      <p style="margin-top:.8rem;font-weight:700">Press and hold the capybara at the top of the page, then let go. A real taba takes 3 to 6 seconds to stand back up.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="who">
+  <div class="wrap">
+    <div class="sec-head"><div><div class="eyebrow">Who it's for</div><h2>Three people. One drawer of squishies.</h2></div></div>
+    <div class="people">
+      <div class="person bg-orange"><div class="buys">Buys for themselves</div><div class="who">The 3pm Meeting Survivor</div><p>25 to 35, works at a desk, has four calls left and one hand free. Wants something that feels good and doesn't look like a kid's toy on camera.</p><div class="pick">Start with: Desk Calm Trio</div></div>
+      <div class="person bg-lemon"><div class="buys">Buys for a kid, keeps one</div><div class="who">The Gift Panic Parent</div><p>Needs something under $30 for a 7‑to‑12‑year‑old by Friday, and would rather it came with a certificate than a recall notice.</p><div class="pick">Start with: Gift Under $30</div></div>
+      <div class="person bg-sky"><div class="buys">Buys for the hunt</div><div class="who">The Blind‑Bag Collector</div><p>Grew up on the 2017 squishy wave, watches unboxings at midnight, and wants the dopamine of a mystery pull without the Temu dupes.</p><div class="pick">Start with: Mystery Squish Bag</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section mystery" id="mystery">
+  <div class="wrap">
+    <div class="bag"><div class="q">?</div><div class="b"><span>2 tabas + 1 charm</span><span>$29.99 · ships free</span></div></div>
+    <div>
+      <div class="eyebrow">Mystery Squish Bag</div>
+      <h2>Blind bag, but make it grown‑up.</h2>
+      <p style="margin-top:1rem;font-weight:600">Two small tabas and a capybara bag charm, drawn from the current series. Exact designs vary. Duplicates are avoided within a bag. Every piece is a certified, tested item, never a mystery in the other sense.</p>
+      <div style="margin-top:1.4rem"><a class="btn pink" href="#">Pull one · $29.99</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section cert" id="safety">
+  <div class="wrap">
+    <div><h3>Certified, not just cute.</h3><p>Every item is a children's product tested to ASTM F963‑23, lead and phthalates by a CPSC‑accepted lab, with a certificate on file. Ask us for the number.</p></div>
+    <div><h3>No dupes. No water beads.</h3><p>No unbranded gel squishies, no expanding fillers, no knock‑off characters. Two of those were recalled this month. None of them are here.</p></div>
+    <div><h3>Ships free from the US.</h3><p>Every bundle ships free by USPS Ground Advantage in 1 to 2 business days. Orders under $29.99 pay a flat $4.95.</p></div>
+  </div>
+</section>
+
+<section class="section signup">
+  <div class="wrap">
+    <div class="eyebrow">Opening October</div>
+    <h2>Get 10% off your first loaf.</h2>
+    <form onsubmit="event.preventDefault();this.querySelector('button').textContent='Sent. Check your inbox.'">
+      <label for="email" class="eyebrow" style="position:absolute;left:-9999px">Email</label>
+      <input id="email" type="email" placeholder="you@yourdesk.com" required>
+      <button class="btn" type="submit">Send my code</button>
+    </form>
+    <p style="margin-top:.8rem;font-size:.9rem;font-weight:800;opacity:.8">Emails are for adults 18+. Unsubscribe any time.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div><strong style="font-family:var(--display);font-size:1.3rem">Deskloaf</strong><ul><li>deskloaf.co</li><li>@deskloaf on TikTok &amp; Instagram</li></ul></div>
+      <div><strong>Shop</strong><ul><li>Bundles</li><li>Mystery Bags</li><li>Desk Calm</li><li>Gifts under $30</li></ul></div>
+      <div><strong>Help</strong><ul><li>Shipping</li><li>Returns</li><li>Safety &amp; Testing</li><li>Contact</li></ul></div>
+    </div>
+    <p class="legal"><strong>WARNING: CHOKING HAZARD — Small parts. Not for children under 3 yrs.</strong> Age grade 6+. Squishies are not food. Do not microwave, freeze or cut open. ⚠ WARNING: Cancer and Reproductive Harm — see product page for the listed chemical – www.P65Warnings.ca.gov. Our advertising is directed to adults 18 and over. © 2026 Deskloaf. Mockup for design review; prices and products subject to change.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var blob=document.getElementById('blob'),hint=document.getElementById('hint'),fill=document.getElementById('fill'),pct=document.getElementById('pct');
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var t0=0,raf=0,rising=false;
+  function setMeter(v){fill.style.width=Math.round(v*100)+'%';pct.textContent=Math.round(v*100)+'% risen';}
+  function down(e){e.preventDefault();cancelAnimationFrame(raf);rising=false;blob.classList.remove('rebound');blob.classList.add('squish');hint.textContent='Squishing…';setMeter(0.42);}
+  function up(){if(!blob.classList.contains('squish'))return;blob.classList.remove('squish');blob.classList.add('rebound');hint.textContent='Watch it rise.';
+    t0=performance.now();rising=true;var dur=reduce?200:3200;
+    (function step(now){var k=Math.min(1,(now-t0)/dur);setMeter(0.42+0.58*k);if(k<1&&rising){raf=requestAnimationFrame(step);}else{hint.textContent='Again? Hold it.';}})(t0);}
+  blob.addEventListener('pointerdown',down);window.addEventListener('pointerup',up);window.addEventListener('pointercancel',up);
+  blob.addEventListener('keydown',function(e){if(e.key===' '||e.key==='Enter'){down(e);}});
+  blob.addEventListener('keyup',function(e){if(e.key===' '||e.key==='Enter'){up();}});
+  blob.setAttribute('tabindex','0');
+})();
+</script>
