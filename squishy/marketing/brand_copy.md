@@ -42,3 +42,17 @@ Squishmallow(s), Squishable, Squishlings, Pop It, Labubu, any licensed character
 
 ## Hashtag set (TikTok)
 #deskloaf #squishy #tabasquishy #squishtok #desksetup #fidget #capybara #asmr #satisfying
+
+## Instagram profile (added 20 Sept 2026)
+
+**Name field:** Deskloaf · Squishies
+**Bio (150 chars max):**
+Squishies for grown-up desks 🍞
+Curated 3-packs. Lab-tested. Ships free (US).
+Ages 6+ · we assume you ordered for yourself
+**Link:** https://deskloaf.co
+**Category:** Toy Store
+**Pinned highlight names:** Bundles · Taba 101 · Behind the box · Restocks
+
+## TikTok profile (same handle when claimed)
+**Bio (80 chars max):** Squishies for grown-up desks 🍞 curated · tested · ships free

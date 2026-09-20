@@ -164,9 +164,13 @@
       "status": "not started"
     },
     "shopify_store": {
-      "domain": "deskloaf.com (to buy)",
+      "domain": "deskloaf.co (bought; connect via Cloudflare DNS)",
       "plan": "",
       "status": "Deskloaf previews requested 2026-09-20; awaiting signup"
+    },
+    "social": {
+      "instagram": "created 2026-09-20",
+      "tiktok": "not yet claimed"
     }
   }
 }
