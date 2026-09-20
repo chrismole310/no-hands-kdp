@@ -1,5 +1,10 @@
 {
-  "store": {"myshopify_domain": "nzkkpf-7r.myshopify.com", "plan": "trial", "created": "2026-09-20", "name_in_admin": "My Store (rename to Deskloaf in Settings > General)"},
+  "store": {
+    "myshopify_domain": "nzkkpf-7r.myshopify.com",
+    "plan": "trial",
+    "created": "2026-09-20",
+    "name_in_admin": "My Store (rename to Deskloaf in Settings > General)"
+  },
   "collections": {
     "bundles": "gid://shopify/Collection/710258426225",
     "mystery-bags": "gid://shopify/Collection/710258458993",
@@ -15,19 +20,75 @@
     "returns": "gid://shopify/Page/719357608305"
   },
   "products": {
-    "TABA-CAPY-M":    {"product": "gid://shopify/Product/16019549815153", "variant": "gid://shopify/ProductVariant/64635106787697"},
-    "TABA-BUN-M":     {"product": "gid://shopify/Product/16019549946225", "variant": "gid://shopify/ProductVariant/64635106918769"},
-    "TABA-PUD-S":     {"product": "gid://shopify/Product/16019550077297", "variant": "gid://shopify/ProductVariant/64635107049841"},
-    "DUMP-MYST":      {"product": "gid://shopify/Product/16019550404977", "variant": "gid://shopify/ProductVariant/64635107377521"},
-    "JUMBO-CROIS":    {"product": "gid://shopify/Product/16019550568817", "variant": "gid://shopify/ProductVariant/64635107541361"},
-    "JUMBO-CHEESE":   {"product": "gid://shopify/Product/16019550699889", "variant": "gid://shopify/ProductVariant/64635107672433"},
-    "NEEDOH-CLASSIC": {"product": "gid://shopify/Product/16019550929265", "variant": "gid://shopify/ProductVariant/64635107901809"},
-    "CHARM-CAPY":     {"product": "gid://shopify/Product/16019551093105", "variant": "gid://shopify/ProductVariant/64635108065649"},
-    "SLUG-MAG":       {"product": "gid://shopify/Product/16019551289713", "variant": "gid://shopify/ProductVariant/64635108262257"},
-    "BNDL-DESK-CALM": {"product": "gid://shopify/Product/16019551420785", "variant": "gid://shopify/ProductVariant/64635108393329"},
-    "BNDL-SNACK-SHELF": {"product": "gid://shopify/Product/16019551584625", "variant": "gid://shopify/ProductVariant/64635108557169"},
-    "BNDL-GIFT-30":   {"product": "gid://shopify/Product/16019551748465", "variant": "gid://shopify/ProductVariant/64635108721009"},
-    "MYST-BAG":       {"product": "gid://shopify/Product/16019551879537", "variant": "gid://shopify/ProductVariant/64635108852081"}
+    "TABA-CAPY-M": {
+      "product": "gid://shopify/Product/16019549815153",
+      "variant": "gid://shopify/ProductVariant/64635106787697"
+    },
+    "TABA-BUN-M": {
+      "product": "gid://shopify/Product/16019549946225",
+      "variant": "gid://shopify/ProductVariant/64635106918769"
+    },
+    "TABA-PUD-S": {
+      "product": "gid://shopify/Product/16019550077297",
+      "variant": "gid://shopify/ProductVariant/64635107049841"
+    },
+    "DUMP-MYST": {
+      "product": "gid://shopify/Product/16019550404977",
+      "variant": "gid://shopify/ProductVariant/64635107377521"
+    },
+    "JUMBO-CROIS": {
+      "product": "gid://shopify/Product/16019550568817",
+      "variant": "gid://shopify/ProductVariant/64635107541361"
+    },
+    "JUMBO-CHEESE": {
+      "product": "gid://shopify/Product/16019550699889",
+      "variant": "gid://shopify/ProductVariant/64635107672433"
+    },
+    "NEEDOH-CLASSIC": {
+      "product": "gid://shopify/Product/16019550929265",
+      "variant": "gid://shopify/ProductVariant/64635107901809"
+    },
+    "CHARM-CAPY": {
+      "product": "gid://shopify/Product/16019551093105",
+      "variant": "gid://shopify/ProductVariant/64635108065649"
+    },
+    "SLUG-MAG": {
+      "product": "gid://shopify/Product/16019551289713",
+      "variant": "gid://shopify/ProductVariant/64635108262257"
+    },
+    "BNDL-DESK-CALM": {
+      "product": "gid://shopify/Product/16019551420785",
+      "variant": "gid://shopify/ProductVariant/64635108393329"
+    },
+    "BNDL-SNACK-SHELF": {
+      "product": "gid://shopify/Product/16019551584625",
+      "variant": "gid://shopify/ProductVariant/64635108557169"
+    },
+    "BNDL-GIFT-30": {
+      "product": "gid://shopify/Product/16019551748465",
+      "variant": "gid://shopify/ProductVariant/64635108721009"
+    },
+    "MYST-BAG": {
+      "product": "gid://shopify/Product/16019551879537",
+      "variant": "gid://shopify/ProductVariant/64635108852081"
+    }
   },
-  "notes": "All products created 2026-09-20 as DRAFT via the Shopify connector. Collections are smart collections keyed on tags: bundle, mystery, desk-calm, gift-under-30, single."
+  "notes": "All products created 2026-09-20 as DRAFT via the Shopify connector. Collections are smart collections keyed on tags: bundle, mystery, desk-calm, gift-under-30, single.",
+  "discounts": {
+    "LOAF10": "gid://shopify/DiscountCodeNode/1884676030833"
+  },
+  "delivery": {
+    "profile": "gid://shopify/DeliveryProfile/140193530225",
+    "location_group": "gid://shopify/DeliveryLocationGroup/142236909937",
+    "zone_domestic": "gid://shopify/DeliveryZone/664823628145",
+    "location": "gid://shopify/Location/121661292913",
+    "rates": {
+      "standard_4.95_under_29.99": "gid://shopify/DeliveryMethodDefinition/1292208931185",
+      "free_29.99_plus": "gid://shopify/DeliveryMethodDefinition/1292208963953"
+    }
+  },
+  "menus": {
+    "main-menu": "gid://shopify/Menu/331262067057",
+    "footer": "gid://shopify/Menu/331262099825"
+  }
 }
