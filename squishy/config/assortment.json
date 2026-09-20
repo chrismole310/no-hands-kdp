@@ -1,0 +1,260 @@
+{
+  "_comment": "Q4 2026 draft assortment. Costs are ESTIMATES from research/squishy-store/03 and 04 until supplier quotes arrive; set quote_status to 'quoted' and replace unit_cost when real. All Phase 1 SKUs must be authorised US wholesale stock that already carries a Children's Product Certificate (CPC).",
+  "currency": "USD",
+  "free_shipping_threshold": 35.0,
+  "flat_shipping_below_threshold": 4.95,
+  "age_grade_default": "6+",
+  "skus": [
+    {
+      "sku": "TABA-CAPY-M",
+      "name": "Capybara Taba Squishy (medium)",
+      "format": "taba_silicone",
+      "candidate_suppliers": [
+        "ORB Toys (Tabalicious)",
+        "TABASQUISHY B2B"
+      ],
+      "unit_cost": 5.5,
+      "quote_status": "estimate",
+      "single_price": 12.99,
+      "addon_price": 9.99,
+      "weight_oz": 3.0,
+      "cpc_required": true,
+      "cpc_on_file": false,
+      "notes": "Hero SKU. Capybara still rising per Toy Fair 2026.",
+      "copy": "A slow-rebound silicone capybara with the sticky, satisfying taba squish. Sits on a desk, survives a bag, and comes back to shape every time."
+    },
+    {
+      "sku": "TABA-BUN-M",
+      "name": "Steamed Bun Taba Squishy",
+      "format": "taba_silicone",
+      "candidate_suppliers": [
+        "ORB Toys (Tabalicious)",
+        "TABASQUISHY B2B"
+      ],
+      "unit_cost": 5.0,
+      "quote_status": "estimate",
+      "single_price": 11.99,
+      "addon_price": 8.99,
+      "weight_oz": 3.0,
+      "cpc_required": true,
+      "cpc_on_file": false,
+      "notes": "Food motif, pairs with capybara.",
+      "copy": "A steamed bun that squishes like dough and slowly puffs back. Silicone, not foam, so it stays soft for months."
+    },
+    {
+      "sku": "TABA-PUD-S",
+      "name": "Pudding Taba Squishy (small)",
+      "format": "taba_silicone",
+      "candidate_suppliers": [
+        "TABASQUISHY B2B"
+      ],
+      "unit_cost": 3.5,
+      "quote_status": "estimate",
+      "single_price": 8.99,
+      "addon_price": 6.99,
+      "weight_oz": 2.0,
+      "cpc_required": true,
+      "cpc_on_file": false,
+      "notes": "Mystery-bag filler tier.",
+      "copy": "A pocket-sized pudding with a wobble. Small enough for a coat pocket, satisfying enough for a meeting."
+    },
+    {
+      "sku": "DUMP-MYST",
+      "name": "Mystery Dumpling Squishy (blind bag)",
+      "format": "food_pu",
+      "candidate_suppliers": [
+        "RMS USA"
+      ],
+      "unit_cost": 5.0,
+      "quote_status": "estimate",
+      "single_price": 10.99,
+      "addon_price": 8.99,
+      "weight_oz": 2.5,
+      "cpc_required": true,
+      "cpc_on_file": false,
+      "notes": "Peak-trend item; confirm no water-bead filler (2026 recalls).",
+      "copy": "One mystery dumpling from the current series, sealed in its blind bag. Foam, no liquid fill."
+    },
+    {
+      "sku": "JUMBO-CROIS",
+      "name": "Jumbo Croissant Slow-Rise (25 cm)",
+      "format": "jumbo_pu",
+      "candidate_suppliers": [
+        "Anboor"
+      ],
+      "unit_cost": 7.0,
+      "quote_status": "estimate",
+      "single_price": 19.99,
+      "addon_price": 15.99,
+      "weight_oz": 6.0,
+      "cpc_required": true,
+      "cpc_on_file": false,
+      "notes": "Content hero for ASMR/unboxing. Bulky: check parcel stays <1 lb in bundles.",
+      "copy": "A 25 cm slow-rising croissant. Press it flat, watch it rise back over ten seconds. The one everyone reaches for first."
+    },
+    {
+      "sku": "JUMBO-CHEESE",
+      "name": "Jumbo Cheese Wedge Slow-Rise",
+      "format": "jumbo_pu",
+      "candidate_suppliers": [
+        "Anboor"
+      ],
+      "unit_cost": 6.5,
+      "quote_status": "estimate",
+      "single_price": 18.99,
+      "addon_price": 14.99,
+      "weight_oz": 5.5,
+      "cpc_required": true,
+      "cpc_on_file": false,
+      "notes": "",
+      "copy": "A jumbo slow-rising cheese wedge with a soft skin and a very slow rise."
+    },
+    {
+      "sku": "NEEDOH-CLASSIC",
+      "name": "NeeDoh Classic Ball",
+      "format": "gel_branded",
+      "candidate_suppliers": [
+        "Schylling (distributor rationed)"
+      ],
+      "unit_cost": 3.25,
+      "quote_status": "estimate",
+      "single_price": 7.99,
+      "addon_price": 6.49,
+      "weight_oz": 4.0,
+      "cpc_required": true,
+      "cpc_on_file": false,
+      "notes": "Only if allocation obtained. Branded, tested; never substitute an unbranded gel dupe.",
+      "copy": "The genuine Schylling NeeDoh classic ball, the toy that started the 2026 squish craze."
+    },
+    {
+      "sku": "CHARM-CAPY",
+      "name": "Capybara Squishy Bag Charm",
+      "format": "keychain",
+      "candidate_suppliers": [
+        "TABASQUISHY B2B",
+        "Faire (various)"
+      ],
+      "unit_cost": 3.0,
+      "quote_status": "estimate",
+      "single_price": 8.99,
+      "addon_price": 6.99,
+      "weight_oz": 1.5,
+      "cpc_required": true,
+      "cpc_on_file": false,
+      "notes": "Wearable = always-on marketing.",
+      "copy": "A mini capybara squishy on a clip, for bags, keys or a desk lamp."
+    },
+    {
+      "sku": "SLUG-MAG",
+      "name": "Magnetic Fidget Slug",
+      "format": "fidget",
+      "candidate_suppliers": [
+        "Faire (various)"
+      ],
+      "unit_cost": 3.5,
+      "quote_status": "estimate",
+      "single_price": 9.99,
+      "addon_price": 7.99,
+      "weight_oz": 2.5,
+      "cpc_required": true,
+      "cpc_on_file": false,
+      "notes": "Desk-calm bundle component; contains magnets, check ASTM F963 magnet clause on CPC.",
+      "copy": "An articulated magnetic slug that clicks, curls and stacks. The fidget for grown-up desks."
+    },
+    {
+      "sku": "STICKER-PACK",
+      "name": "Kawaii Food Sticker Sheet",
+      "format": "insert",
+      "candidate_suppliers": [
+        "print locally"
+      ],
+      "unit_cost": 0.4,
+      "quote_status": "estimate",
+      "single_price": 2.99,
+      "addon_price": 1.99,
+      "weight_oz": 0.2,
+      "cpc_required": false,
+      "cpc_on_file": true,
+      "notes": "Free insert in every order; boosts unboxing content.",
+      "copy": "A sheet of kawaii food stickers, free in every order."
+    }
+  ],
+  "bundles": [
+    {
+      "sku": "BNDL-DESK-CALM",
+      "name": "Desk Calm Trio",
+      "price": 34.99,
+      "components": [
+        "TABA-CAPY-M",
+        "TABA-BUN-M",
+        "SLUG-MAG"
+      ],
+      "positioning": "For grown-ups: two taba squishies and a magnetic slug for the desk.",
+      "collection": "Bundles"
+    },
+    {
+      "sku": "BNDL-SNACK-SHELF",
+      "name": "Snack Shelf Set",
+      "price": 36.99,
+      "components": [
+        "JUMBO-CROIS",
+        "DUMP-MYST",
+        "TABA-PUD-S"
+      ],
+      "positioning": "Jumbo croissant, a mystery dumpling and a pudding: the food-squishy starter set.",
+      "collection": "Bundles"
+    },
+    {
+      "sku": "BNDL-GIFT-30",
+      "name": "Gift Under $30",
+      "price": 29.99,
+      "components": [
+        "TABA-CAPY-M",
+        "CHARM-CAPY",
+        "STICKER-PACK"
+      ],
+      "positioning": "Capybara squishy plus matching bag charm, gift-wrapped.",
+      "collection": "Gifts under $30"
+    },
+    {
+      "sku": "MYST-BAG",
+      "name": "Mystery Squish Bag",
+      "price": 29.99,
+      "components": [
+        "TABA-PUD-S",
+        "TABA-PUD-S",
+        "CHARM-CAPY"
+      ],
+      "positioning": "Two small tabas and a capybara bag charm; exact designs vary and duplicates are avoided within a bag.",
+      "collection": "Mystery Bags",
+      "notes": "Blind-bag format only clears $10 CM on wholesale stock at $29.99; it becomes the hero format with own-brand costs in Phase 3."
+    }
+  ],
+  "collections": [
+    {
+      "handle": "bundles",
+      "title": "Bundles",
+      "description": "Curated three-piece sets. Every set ships free."
+    },
+    {
+      "handle": "mystery-bags",
+      "title": "Mystery Bags",
+      "description": "Blind bags of certified squishies. Contents vary; duplicates avoided within a bag."
+    },
+    {
+      "handle": "desk-calm",
+      "title": "Desk Calm",
+      "description": "Squishies and fidgets picked for grown-up desks."
+    },
+    {
+      "handle": "gifts-under-30",
+      "title": "Gifts under $30",
+      "description": "Ready-to-gift sets under thirty dollars."
+    },
+    {
+      "handle": "add-ons",
+      "title": "Add-ons",
+      "description": "Single squishies at add-on prices when they ride along with a bundle."
+    }
+  ]
+}
