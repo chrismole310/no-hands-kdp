@@ -145,11 +145,12 @@
       "copy": "A mini capybara squishy on a clip, for bags, keys or a desk lamp."
     },
     {
-      "sku": "SLUG-MAG",
-      "name": "Magnetic Fidget Slug",
+      "sku": "SLUG-ART",
+      "name": "Articulated Fidget Slug",
       "format": "fidget",
       "candidate_suppliers": [
-        "Faire (various)"
+        "Faire (various)",
+        "Cevioce (retail sample)"
       ],
       "unit_cost": 3.5,
       "quote_status": "estimate",
@@ -158,8 +159,8 @@
       "weight_oz": 2.5,
       "cpc_required": true,
       "cpc_on_file": false,
-      "notes": "Desk-calm bundle component; contains magnets, check ASTM F963 magnet clause on CPC.",
-      "copy": "An articulated magnetic slug that clicks, curls and stacks. The fidget for grown-up desks."
+      "notes": "Desk-calm bundle component; articulated, no magnets (CPSC 2026 magnet-fidget recalls).",
+      "copy": "An articulated slug that clicks, curls and stacks, one segment at a time. The fidget for grown-up desks. No magnets."
     },
     {
       "sku": "STICKER-PACK",
@@ -187,9 +188,9 @@
       "components": [
         "TABA-CAPY-M",
         "TABA-BUN-M",
-        "SLUG-MAG"
+        "SLUG-ART"
       ],
-      "positioning": "For grown-ups: two taba squishies and a magnetic slug for the desk.",
+      "positioning": "For grown-ups: two taba squishies and an articulated slug for the desk.",
       "collection": "Bundles"
     },
     {

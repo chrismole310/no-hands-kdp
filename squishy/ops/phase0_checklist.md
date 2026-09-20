@@ -12,7 +12,7 @@ Gate 0 to pass before ordering stock: two wholesale sources with CPCs confirmed;
 | 6 | Build store skeleton: pages, collections, products, bundles, menus, weights, LOAF10 code | Claude | done | Built 20 Sept via connector; IDs in `ops/store_ids.json`; products are DRAFT |
 | 7 | Shipping rates: free at $29.99, $4.95 below | Claude | done | Default profile updated; Express and $8 default rates removed |
 | 8 | Apply to Faire as retailer | Human | open | Copy in `suppliers/outreach.md` |
-| 9 | Email ORB, TABASQUISHY, RMS USA, Anboor, Schylling | Human (send) / Claude (drafted) | drafted | `suppliers/outreach.md` |
+| 9 | Supplier outreach | Claude (drafts) / Human (send + forms) | drafts in Gmail | TABASQUISHY and Anboor drafts in Gmail (review, add state, send). ORB and RMS via web forms, text in `suppliers/contacts.md`. Schylling paused new accounts. |
 | 10 | Enter quotes and CPC data as they arrive | Claude | waiting | `config/assortment.json`, `ops/compliance_tracker.json` |
 | 11 | Re-run margins with real quotes; confirm Gate 0 | Claude | waiting | `python3 squishy/finance/bundle_margins.py` |
 | 12 | Product-liability insurance (~$1M) | Human | open | ~$500/yr; needed before first sale |

@@ -122,7 +122,7 @@
       "status": "awaiting supplier docs"
     },
     {
-      "sku": "SLUG-MAG",
+      "sku": "SLUG-ART",
       "supplier": "",
       "cpc_number": "",
       "cpc_date": "",
@@ -134,7 +134,7 @@
       "age_grade": "6+",
       "prop65_chemical": "",
       "tracking_label_photo": "",
-      "status": "awaiting supplier docs; check magnet clause"
+      "status": "awaiting supplier docs"
     }
   ],
   "store_level": {
