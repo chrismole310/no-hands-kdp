@@ -90,5 +90,21 @@
   "menus": {
     "main-menu": "gid://shopify/Menu/331262067057",
     "footer": "gid://shopify/Menu/331262099825"
-  }
+  },
+  "themes": {
+    "main_horizon": "gid://shopify/OnlineStoreTheme/198380978545",
+    "deskloaf_copy_unpublished": "gid://shopify/OnlineStoreTheme/198382190961"
+  },
+  "routines": {
+    "monday_ops_report": "trig_01LVPHa9zNDrnyHs5dXcJoJD (cron 0 13 * * 1 UTC; fires into this session; may lack connector tools)"
+  },
+  "calendar_events": [
+    "2026-09-21 admin afternoon",
+    "weekly Tue footage shoot",
+    "2026-10-04 Gate 0",
+    "2026-10-25 stock in hand / soft launch",
+    "2026-11-15 Gate 1",
+    "2026-11-27 BFCM",
+    "2027-01-05 Gate 2"
+  ]
 }

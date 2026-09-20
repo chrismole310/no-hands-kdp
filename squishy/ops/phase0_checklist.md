@@ -23,4 +23,5 @@ Gate 0 to pass before ordering stock: two wholesale sources with CPCs confirmed;
 
 | 17 | Paste store policies (refund, shipping, privacy, terms) | Human | open | `config/policies.md`; connector lacks the legal-policies scope |
 | 18 | Set store name to Deskloaf, store email, address, Shopify Payments | Human | open | Settings > General / Payments |
-| 19 | Home page theme sections: hero, value blocks, announcement bar | Human (paste) / Claude (copy) | open | `marketing/brand_copy.md`; connector cannot edit the live theme |
+| 19 | Home page theme copy | Claude (edit) / Human (publish) | edited on copy | Unpublished theme "Horizon - Deskloaf copy (Claude edits)": preview in Online Store > Themes, then Publish |
+| 20 | Monday ops routine + calendar deadlines | Claude | done | Routine trig_01LVPHa9zNDrnyHs5dXcJoJD; 7 Google Calendar events incl. gates |
