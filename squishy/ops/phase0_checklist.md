@@ -5,9 +5,9 @@ Gate 0 to pass before ordering stock: two wholesale sources with CPCs confirmed;
 | # | Task | Owner | Status | Notes |
 |---|---|---|---|---|
 | 1 | Confirm entity, EIN, business bank | Human | open | Needed before Faire and TikTok Shop applications |
-| 2 | Brand name: shortlist and clearance search | Claude | in progress | Report at `ops/brand-name-clearance.md` when the search finishes |
+| 2 | Brand name: shortlist and clearance search | Claude | done | `ops/brand-name-clearance.md`: top 3 are Deskloaf, Doughlet, Fidgetnook |
 | 3 | Brand name: final pick, buy .com, claim TikTok/Instagram handles | Human | open | Do not buy until item 2 is reviewed |
-| 4 | New Shopify store: generate previews, pick theme, sign up | Human | in progress | Previews requested 20 Sept via the Shopify connector; sign up through the chosen preview's link |
+| 4 | New Shopify store: generate previews, pick theme, sign up | Human | previews ready | Generated 20 Sept via the Shopify connector; sign up through the chosen preview's link |
 | 5 | Connect the new store to this session (switch-shop) or create a custom-app Admin token | Human | open | Token scopes: write_products, write_content, read_publications |
 | 6 | Build store skeleton: pages, collections, products, bundles | Claude | ready | `python3 squishy/shopify/setup_store.py --dry-run` passes; run for real after item 5 |
 | 7 | Shipping profile: free at $35, $4.95 below; USPS Ground Advantage via Shopify Shipping | Claude/Human | open | Set in Shopify admin (delivery profiles); Claude can do it via GraphQL once connected |
