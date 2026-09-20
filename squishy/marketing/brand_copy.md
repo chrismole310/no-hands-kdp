@@ -56,3 +56,13 @@ Ages 6+ · we assume you ordered for yourself
 
 ## TikTok profile (same handle when claimed)
 **Bio (80 chars max):** Squishies for grown-up desks 🍞 curated · tested · ships free
+
+
+## Audience-led visual identity (v2, 20 Sept 2026)
+
+Primary buyer: women 24–38 buying for their own desk. Secondary: parents gifting 7–12s; adult blind-bag collectors. Copy addresses the self-buyer; the others overhear.
+
+**Palette:** cream #FFF6EC ground, paper #FFFDF8 cards, plum ink #3B2233, blush #FFD6E0, peach #FFB88C, sage #BFD8B8, butter #FFE8A3, lilac #DCCBFF, coral pop #FF5A6E (one accent for buttons and highlights).
+**Type:** Bricolage Grotesque 800 for headlines, Manrope for body. Chunky outlines (3px plum) and 5px offset shadows for a sticker feel without reading as toy-aisle.
+**Copy rules:** name the moment (9:04 AM, 3:02 PM, 11:20 PM), give permission ("Yes, it's for you"), lead with texture and camera-worthiness, keep safety as a reason to trust rather than a warning tone. Parents get one clearly labelled gift strip.
+**Mockup:** `squishy/marketing/site/deskloaf-mockup.html` (published artifact). Sections: marquee, hero with squish demo, ritual band, bundles, "your desk three ways", Taba 101 with rebound meter, safety ("two were recalled this month"), gift strip, signup, legal footer, mobile buy bar.
