@@ -256,5 +256,7 @@
       "title": "Add-ons",
       "description": "Single squishies at add-on prices when they ride along with a bundle."
     }
-  ]
+  ],
+  "brand": "Deskloaf",
+  "domain_target": "deskloaf.com"
 }

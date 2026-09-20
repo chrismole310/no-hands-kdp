@@ -1,22 +1,172 @@
 {
   "_comment": "One row per SKU. TikTok Shop requires CPC and lab report <= 365 days old; retest on any material change. Update dates as documents arrive.",
   "skus": [
-    {"sku": "TABA-CAPY-M",   "supplier": "", "cpc_number": "", "cpc_date": "", "lab": "", "astm_f963_23": false, "lead_test": false, "phthalate_test": false, "fill_material_confirmed": "", "age_grade": "6+", "prop65_chemical": "", "tracking_label_photo": "", "status": "awaiting supplier docs"},
-    {"sku": "TABA-BUN-M",    "supplier": "", "cpc_number": "", "cpc_date": "", "lab": "", "astm_f963_23": false, "lead_test": false, "phthalate_test": false, "fill_material_confirmed": "", "age_grade": "6+", "prop65_chemical": "", "tracking_label_photo": "", "status": "awaiting supplier docs"},
-    {"sku": "TABA-PUD-S",    "supplier": "", "cpc_number": "", "cpc_date": "", "lab": "", "astm_f963_23": false, "lead_test": false, "phthalate_test": false, "fill_material_confirmed": "", "age_grade": "6+", "prop65_chemical": "", "tracking_label_photo": "", "status": "awaiting supplier docs"},
-    {"sku": "DUMP-MYST",     "supplier": "", "cpc_number": "", "cpc_date": "", "lab": "", "astm_f963_23": false, "lead_test": false, "phthalate_test": false, "fill_material_confirmed": "", "age_grade": "6+", "prop65_chemical": "", "tracking_label_photo": "", "status": "awaiting supplier docs"},
-    {"sku": "JUMBO-CROIS",   "supplier": "", "cpc_number": "", "cpc_date": "", "lab": "", "astm_f963_23": false, "lead_test": false, "phthalate_test": false, "fill_material_confirmed": "", "age_grade": "6+", "prop65_chemical": "", "tracking_label_photo": "", "status": "awaiting supplier docs"},
-    {"sku": "JUMBO-CHEESE",  "supplier": "", "cpc_number": "", "cpc_date": "", "lab": "", "astm_f963_23": false, "lead_test": false, "phthalate_test": false, "fill_material_confirmed": "", "age_grade": "6+", "prop65_chemical": "", "tracking_label_photo": "", "status": "awaiting supplier docs"},
-    {"sku": "NEEDOH-CLASSIC","supplier": "", "cpc_number": "", "cpc_date": "", "lab": "", "astm_f963_23": false, "lead_test": false, "phthalate_test": false, "fill_material_confirmed": "", "age_grade": "3+", "prop65_chemical": "", "tracking_label_photo": "", "status": "allocation not yet obtained"},
-    {"sku": "CHARM-CAPY",    "supplier": "", "cpc_number": "", "cpc_date": "", "lab": "", "astm_f963_23": false, "lead_test": false, "phthalate_test": false, "fill_material_confirmed": "", "age_grade": "6+", "prop65_chemical": "", "tracking_label_photo": "", "status": "awaiting supplier docs"},
-    {"sku": "SLUG-MAG",      "supplier": "", "cpc_number": "", "cpc_date": "", "lab": "", "astm_f963_23": false, "lead_test": false, "phthalate_test": false, "fill_material_confirmed": "n/a", "age_grade": "6+", "prop65_chemical": "", "tracking_label_photo": "", "status": "awaiting supplier docs; check magnet clause"}
+    {
+      "sku": "TABA-CAPY-M",
+      "supplier": "",
+      "cpc_number": "",
+      "cpc_date": "",
+      "lab": "",
+      "astm_f963_23": false,
+      "lead_test": false,
+      "phthalate_test": false,
+      "fill_material_confirmed": "",
+      "age_grade": "6+",
+      "prop65_chemical": "",
+      "tracking_label_photo": "",
+      "status": "awaiting supplier docs"
+    },
+    {
+      "sku": "TABA-BUN-M",
+      "supplier": "",
+      "cpc_number": "",
+      "cpc_date": "",
+      "lab": "",
+      "astm_f963_23": false,
+      "lead_test": false,
+      "phthalate_test": false,
+      "fill_material_confirmed": "",
+      "age_grade": "6+",
+      "prop65_chemical": "",
+      "tracking_label_photo": "",
+      "status": "awaiting supplier docs"
+    },
+    {
+      "sku": "TABA-PUD-S",
+      "supplier": "",
+      "cpc_number": "",
+      "cpc_date": "",
+      "lab": "",
+      "astm_f963_23": false,
+      "lead_test": false,
+      "phthalate_test": false,
+      "fill_material_confirmed": "",
+      "age_grade": "6+",
+      "prop65_chemical": "",
+      "tracking_label_photo": "",
+      "status": "awaiting supplier docs"
+    },
+    {
+      "sku": "DUMP-MYST",
+      "supplier": "",
+      "cpc_number": "",
+      "cpc_date": "",
+      "lab": "",
+      "astm_f963_23": false,
+      "lead_test": false,
+      "phthalate_test": false,
+      "fill_material_confirmed": "",
+      "age_grade": "6+",
+      "prop65_chemical": "",
+      "tracking_label_photo": "",
+      "status": "awaiting supplier docs"
+    },
+    {
+      "sku": "JUMBO-CROIS",
+      "supplier": "",
+      "cpc_number": "",
+      "cpc_date": "",
+      "lab": "",
+      "astm_f963_23": false,
+      "lead_test": false,
+      "phthalate_test": false,
+      "fill_material_confirmed": "",
+      "age_grade": "6+",
+      "prop65_chemical": "",
+      "tracking_label_photo": "",
+      "status": "awaiting supplier docs"
+    },
+    {
+      "sku": "JUMBO-CHEESE",
+      "supplier": "",
+      "cpc_number": "",
+      "cpc_date": "",
+      "lab": "",
+      "astm_f963_23": false,
+      "lead_test": false,
+      "phthalate_test": false,
+      "fill_material_confirmed": "",
+      "age_grade": "6+",
+      "prop65_chemical": "",
+      "tracking_label_photo": "",
+      "status": "awaiting supplier docs"
+    },
+    {
+      "sku": "NEEDOH-CLASSIC",
+      "supplier": "",
+      "cpc_number": "",
+      "cpc_date": "",
+      "lab": "",
+      "astm_f963_23": false,
+      "lead_test": false,
+      "phthalate_test": false,
+      "fill_material_confirmed": "",
+      "age_grade": "3+",
+      "prop65_chemical": "",
+      "tracking_label_photo": "",
+      "status": "allocation not yet obtained"
+    },
+    {
+      "sku": "CHARM-CAPY",
+      "supplier": "",
+      "cpc_number": "",
+      "cpc_date": "",
+      "lab": "",
+      "astm_f963_23": false,
+      "lead_test": false,
+      "phthalate_test": false,
+      "fill_material_confirmed": "",
+      "age_grade": "6+",
+      "prop65_chemical": "",
+      "tracking_label_photo": "",
+      "status": "awaiting supplier docs"
+    },
+    {
+      "sku": "SLUG-MAG",
+      "supplier": "",
+      "cpc_number": "",
+      "cpc_date": "",
+      "lab": "",
+      "astm_f963_23": false,
+      "lead_test": false,
+      "phthalate_test": false,
+      "fill_material_confirmed": "n/a",
+      "age_grade": "6+",
+      "prop65_chemical": "",
+      "tracking_label_photo": "",
+      "status": "awaiting supplier docs; check magnet clause"
+    }
   ],
   "store_level": {
-    "product_liability_insurance": {"carrier": "", "policy_no": "", "expires": "", "status": "not purchased"},
-    "entity": {"type": "", "state": "", "ein": false, "status": "unknown"},
-    "sales_tax_registration": {"states": [], "status": "not started"},
-    "trademark_clearance": {"brand": "", "tsdr_checked": false, "attorney_opinion": false, "status": "in progress (see ops/brand-name-clearance.md)"},
-    "tiktok_shop_seller_account": {"status": "not started"},
-    "shopify_store": {"domain": "", "plan": "", "status": "previews requested 2026-09-20"}
+    "product_liability_insurance": {
+      "carrier": "",
+      "policy_no": "",
+      "expires": "",
+      "status": "not purchased"
+    },
+    "entity": {
+      "type": "",
+      "state": "",
+      "ein": false,
+      "status": "unknown"
+    },
+    "sales_tax_registration": {
+      "states": [],
+      "status": "not started"
+    },
+    "trademark_clearance": {
+      "brand": "Deskloaf",
+      "tsdr_checked": false,
+      "attorney_opinion": false,
+      "status": "knockout screen clean (ops/brand-name-clearance.md); attorney clearance pending"
+    },
+    "tiktok_shop_seller_account": {
+      "status": "not started"
+    },
+    "shopify_store": {
+      "domain": "deskloaf.com (to buy)",
+      "plan": "",
+      "status": "Deskloaf previews requested 2026-09-20; awaiting signup"
+    }
   }
 }

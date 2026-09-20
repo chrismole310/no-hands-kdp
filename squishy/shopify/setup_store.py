@@ -148,7 +148,7 @@ def upsert_product(api: Shopify, handle: str, title: str, html: str, price: floa
     existing = find_by_handle(api, "product", handle)
     product = {
         "title": title, "handle": handle, "descriptionHtml": html, "tags": tags,
-        "status": "DRAFT", "productType": "Squishy toy", "vendor": "",
+        "status": "DRAFT", "productType": "Squishy toy", "vendor": ASSORTMENT.get("brand", ""),
         "collectionsToJoin": collection_ids,
     }
     if addon_price is not None:
