@@ -6,7 +6,7 @@ Gate 0 to pass before ordering stock: two wholesale sources with CPCs confirmed;
 |---|---|---|---|---|
 | 1 | Confirm entity, EIN, business bank | Human | open | Needed before Faire and TikTok Shop applications |
 | 2 | Brand name: shortlist and clearance search | Claude | done | `ops/brand-name-clearance.md`: top 3 are Deskloaf, Doughlet, Fidgetnook |
-| 3 | Brand name: final pick, domain, handles | Human | mostly done | Deskloaf chosen; deskloaf.co bought (Namecheap, DNS via Cloudflare pending); Instagram created 20 Sept; TikTok handle still to claim |
+| 3 | Brand name: final pick, domain, handles | Human | mostly done | Deskloaf chosen; deskloaf.co bought (Namecheap, DNS via Cloudflare pending); Instagram, Facebook Page and TikTok all created 20 Sept |
 | 4 | New Shopify store created | Human | done | nzkkpf-7r.myshopify.com, trial plan; rename to Deskloaf in Settings > General; pick Basic plan |
 | 5 | Connect the new store to this session | Human | done | Connected via Shopify connector 20 Sept |
 | 6 | Build store skeleton: pages, collections, products, bundles, menus, weights, LOAF10 code | Claude | done | Built 20 Sept via connector; IDs in `ops/store_ids.json`; products are DRAFT |
