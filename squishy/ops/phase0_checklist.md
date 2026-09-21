@@ -7,7 +7,7 @@ Gate 0 to pass before ordering stock: two wholesale sources with CPCs confirmed;
 | 1 | Confirm entity, EIN, business bank | Human | open | Needed before Faire and TikTok Shop applications |
 | 2 | Brand name: shortlist and clearance search | Claude | done | `ops/brand-name-clearance.md`: top 3 are Deskloaf, Doughlet, Fidgetnook |
 | 3 | Brand name: final pick, domain, handles | Human | mostly done | Deskloaf chosen; deskloaf.co bought (Namecheap, DNS via Cloudflare pending); Instagram, Facebook Page and TikTok all created 20 Sept |
-| 4 | New Shopify store created | Human | done | nzkkpf-7r.myshopify.com, trial plan; rename to Deskloaf in Settings > General; pick Basic plan |
+| 4 | New Shopify store created | Human | done | nzkkpf-7r.myshopify.com; renamed Deskloaf 21 Sept; still trial plan, pick Basic |
 | 5 | Connect the new store to this session | Human | done | Connected via Shopify connector 20 Sept |
 | 6 | Build store skeleton: pages, collections, products, bundles, menus, weights, LOAF10 code | Claude | done | Built 20 Sept via connector; IDs in `ops/store_ids.json`; products are DRAFT |
 | 7 | Shipping rates: free at $29.99, $4.95 below | Claude | done | Default profile updated; Express and $8 default rates removed |
@@ -22,6 +22,6 @@ Gate 0 to pass before ordering stock: two wholesale sources with CPCs confirmed;
 | 16 | Weekly report routine scheduled (Mondays) | Claude | blocked by item 5 | ShopifyQL via connector |
 
 | 17 | Paste store policies (refund, shipping, privacy, terms) | Human | open | `config/policies.md`; connector lacks the legal-policies scope |
-| 18 | Set store name to Deskloaf, store email, address, Shopify Payments | Human | open | Settings > General / Payments |
+| 18 | Store name, email, domain, Shopify Payments | Human | mostly done | Name = Deskloaf, email = deskloaf@gmail.com, primary domain = deskloaf.co (21 Sept). Payments and Basic plan still open |
 | 19 | Home page theme copy | Claude (edit) / Human (publish) | edited on copy | Unpublished theme "Horizon - Deskloaf copy (Claude edits)": preview in Online Store > Themes, then Publish |
 | 20 | Monday ops routine + calendar deadlines | Claude | done | Routine trig_01LVPHa9zNDrnyHs5dXcJoJD; 7 Google Calendar events incl. gates |

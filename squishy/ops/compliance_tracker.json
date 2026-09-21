@@ -164,14 +164,17 @@
       "status": "not started"
     },
     "shopify_store": {
-      "domain": "deskloaf.co (bought; connect via Cloudflare DNS)",
+      "domain": "deskloaf.co (primary, connected 2026-09-21)",
       "plan": "",
-      "status": "Deskloaf previews requested 2026-09-20; awaiting signup"
+      "status": "named Deskloaf; trial plan; email deskloaf@gmail.com"
     },
     "social": {
       "instagram": "created 2026-09-20",
       "facebook_page": "created 2026-09-20",
       "tiktok": "created 2026-09-20"
+    },
+    "supplier_flags": {
+      "ORB Toys / The Orb Factory": "May 2026 recall of 120k Orb Funkee sand-filled squeeze toys (possible asbestos). Tabalicious not named. Require SKU-specific current lab reports; ask about post-recall QA."
     }
   }
 }
