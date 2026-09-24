@@ -11,8 +11,8 @@ Gate 0 to pass before ordering stock: two wholesale sources with CPCs confirmed;
 | 5 | Connect the new store to this session | Human | done | Connected via Shopify connector 20 Sept |
 | 6 | Build store skeleton: pages, collections, products, bundles, menus, weights, LOAF10 code | Claude | done | Built 20 Sept via connector; IDs in `ops/store_ids.json`; products are DRAFT |
 | 7 | Shipping rates: free at $29.99, $4.95 below | Claude | done | Default profile updated; Express and $8 default rates removed |
-| 8 | Apply to Faire as retailer | Human | open | Copy in `suppliers/outreach.md` |
-| 9 | Supplier outreach | Claude / Human | in progress | RMS form submitted 22-23 Sept (CC2). ORB form filled, needs Chris to tick reCAPTCHA and submit. Anboor replied 21 Sept: MOQ 100/item, no docs, none of the six questions answered; reply drafted in deskloaf@gmail.com, not sent. TABASQUISHY: send status unknown (draft no longer in chrismole@gmail.com). Schylling paused new accounts. |
+| 8 | Apply to Faire as retailer | Human | open | Paste-ready answers in `suppliers/faire-application.md` (24 Sept) |
+| 9 | Supplier outreach | Claude / Human | in progress | RMS form submitted 22-23 Sept (CC2). ORB form filled, needs Chris to tick reCAPTCHA and submit. Anboor replied 21 Sept: MOQ 100/item, no docs, none of the six questions answered; reply drafted in deskloaf@gmail.com, not sent; negotiation text (50/SKU + docs) in `suppliers/anboor-reply.md`. TABASQUISHY: send status unknown (draft no longer in chrismole@gmail.com). Schylling paused new accounts. |
 | 10 | Enter quotes and CPC data as they arrive | Claude | waiting | `config/assortment.json`, `ops/compliance_tracker.json` |
 | 11 | Re-run margins with real quotes; confirm Gate 0 | Claude | waiting | `python3 squishy/finance/bundle_margins.py` |
 | 12 | Product-liability insurance (~$1M) | Human | open | ~$500/yr; needed before first sale |
