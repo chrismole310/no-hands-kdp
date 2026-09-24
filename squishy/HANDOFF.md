@@ -1,6 +1,11 @@
-# Deskloaf handoff (state as of 20 Sept 2026, 10:30 UTC)
+# Deskloaf handoff (state as of 24 Sept 2026)
 
 Read this first when continuing the Deskloaf project in a new Claude Code session. Everything below is committed on branch `claude/squishy-shopify-research-9hwl25`.
+
+## Where work happens
+- Cloud session (claude.ai/code): built the store, runs the Monday routine, publishes the mockup artifact. Weekly reports commit to `squishy/reports/` (first one: 2026-09-21; pull before assuming it is missing).
+- CC2 (Mac Studio) clone at `~/workspace/no-hands-kdp`, same branch: supplier forms, email in deskloaf@gmail.com, corporate record. Nothing pushed from CC2 yet as of 24 Sept; pull/push from both sides to keep the branch as the single source of truth.
+- Entity: MoleHole, Inc. (NY). Business email deskloaf@gmail.com.
 
 ## What Deskloaf is
 A US Shopify store selling curated squishy-toy bundles ($30–37) to adults and gift buyers, positioned "Squishies for grown-up desks". Q4 2026 launch on certified US-wholesale stock as a validation run; own-brand imports in 2027 only if Q4 gates pass. Full plan: `research/squishy-store/10-execution-plan.md`. Research: `research/squishy-store/00-README.md`.

@@ -145,14 +145,15 @@
       "status": "not purchased"
     },
     "entity": {
-      "type": "",
-      "state": "",
-      "ein": false,
-      "status": "unknown"
+      "type": "S-corp (C-corp with S election)",
+      "name": "MoleHole, Inc.",
+      "state": "NY",
+      "ein": true,
+      "status": "verified 2026-09-23 against iCloud CORP DOCUMENTS (see CC2 memory note molehole-inc-corporate-record)"
     },
     "sales_tax_registration": {
       "states": [],
-      "status": "not started"
+      "status": "NY Certificate of Authority NOT found on disk; resale certificate NOT found; apply before first sale and before wholesale accounts ask for it"
     },
     "trademark_clearance": {
       "brand": "Deskloaf",
@@ -175,6 +176,13 @@
     },
     "supplier_flags": {
       "ORB Toys / The Orb Factory": "May 2026 recall of 120k Orb Funkee sand-filled squeeze toys (possible asbestos). Tabalicious not named. Require SKU-specific current lab reports; ask about post-recall QA."
+    },
+    "supplier_status": {
+      "RMS USA": "contact form submitted 2026-09-22/23, awaiting reply",
+      "ORB Toys": "wholesale form filled, blocked on reCAPTCHA (human), allow 10 business days after submit",
+      "Anboor": "replied 2026-09-21: MOQ 100 per item, no CPC/lab docs, questions unanswered; reply drafted in deskloaf@gmail.com, unsent",
+      "TABASQUISHY": "send status unknown as of 2026-09-24",
+      "Schylling": "not pursuing (new accounts paused)"
     }
   }
 }

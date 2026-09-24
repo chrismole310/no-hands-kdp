@@ -4,7 +4,7 @@ Gate 0 to pass before ordering stock: two wholesale sources with CPCs confirmed;
 
 | # | Task | Owner | Status | Notes |
 |---|---|---|---|---|
-| 1 | Confirm entity, EIN, business bank | Human | open | Needed before Faire and TikTok Shop applications |
+| 1 | Entity | Human | done | MoleHole, Inc. (NY, since Mar 2023, S-corp, EIN, SAM UEI/CAGE on file per CC2 session 23 Sept). Fill business address and registration number into Shopify policies/ToS |
 | 2 | Brand name: shortlist and clearance search | Claude | done | `ops/brand-name-clearance.md`: top 3 are Deskloaf, Doughlet, Fidgetnook |
 | 3 | Brand name: final pick, domain, handles | Human | mostly done | Deskloaf chosen; deskloaf.co bought (Namecheap, DNS via Cloudflare pending); Instagram, Facebook Page and TikTok all created 20 Sept |
 | 4 | New Shopify store created | Human | done | nzkkpf-7r.myshopify.com; renamed Deskloaf 21 Sept; still trial plan, pick Basic |
@@ -12,7 +12,7 @@ Gate 0 to pass before ordering stock: two wholesale sources with CPCs confirmed;
 | 6 | Build store skeleton: pages, collections, products, bundles, menus, weights, LOAF10 code | Claude | done | Built 20 Sept via connector; IDs in `ops/store_ids.json`; products are DRAFT |
 | 7 | Shipping rates: free at $29.99, $4.95 below | Claude | done | Default profile updated; Express and $8 default rates removed |
 | 8 | Apply to Faire as retailer | Human | open | Copy in `suppliers/outreach.md` |
-| 9 | Supplier outreach | Claude (drafts) / Human (send + forms) | drafts in Gmail | TABASQUISHY and Anboor drafts in Gmail (review, add state, send). ORB and RMS via web forms, text in `suppliers/contacts.md`. Schylling paused new accounts. |
+| 9 | Supplier outreach | Claude / Human | in progress | RMS form submitted 22-23 Sept (CC2). ORB form filled, needs Chris to tick reCAPTCHA and submit. Anboor replied 21 Sept: MOQ 100/item, no docs, none of the six questions answered; reply drafted in deskloaf@gmail.com, not sent. TABASQUISHY: send status unknown (draft no longer in chrismole@gmail.com). Schylling paused new accounts. |
 | 10 | Enter quotes and CPC data as they arrive | Claude | waiting | `config/assortment.json`, `ops/compliance_tracker.json` |
 | 11 | Re-run margins with real quotes; confirm Gate 0 | Claude | waiting | `python3 squishy/finance/bundle_margins.py` |
 | 12 | Product-liability insurance (~$1M) | Human | open | ~$500/yr; needed before first sale |
@@ -25,3 +25,5 @@ Gate 0 to pass before ordering stock: two wholesale sources with CPCs confirmed;
 | 18 | Store name, email, domain, Shopify Payments | Human | mostly done | Name = Deskloaf, email = deskloaf@gmail.com, primary domain = deskloaf.co (21 Sept). Payments and Basic plan still open |
 | 19 | Home page theme copy | Claude (edit) / Human (publish) | edited on copy | Unpublished theme "Horizon - Deskloaf copy (Claude edits)": preview in Online Store > Themes, then Publish |
 | 20 | Monday ops routine + calendar deadlines | Claude | done | Routine trig_01LVPHa9zNDrnyHs5dXcJoJD; 7 Google Calendar events incl. gates |
+| 21 | NY Certificate of Authority + resale certificate | Human | open | Flagged by CC2 session 23 Sept: none on disk. Needed to collect NY sales tax and often required to open wholesale accounts. Apply at NY Tax Dept (Form DTF-17, online). |
+| 22 | Anboor MOQ 100/item vs budget | Claude / Human | decision needed | 100 units x 2 jumbo SKUs at ~$6.75 est. = ~$1,350, most of the first-order budget. Options: one jumbo SKU only, negotiate 50, or source jumbos via Faire. |
