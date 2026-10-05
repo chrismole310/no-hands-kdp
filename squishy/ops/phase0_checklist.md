@@ -1,6 +1,6 @@
 # Phase 0 checklist (target: complete by 4 Oct 2026)
 
-Gate 0 to pass before ordering stock: two wholesale sources with CPCs confirmed; at least one bundle at >= $10 contribution before acquisition cost at ~$35; stock able to arrive by 25 Oct.
+Gate 0 to pass before ordering stock: two wholesale sources with CPCs confirmed; at least one bundle at >= $10 contribution before acquisition cost at ~$35; stock able to arrive by 25 Oct. **Gate 0 (4 Oct) MISSED.** Decision pending: (A) Faire-only November launch or (B) pause to January. See reports/2026-10-05-weekly.md.
 
 | # | Task | Owner | Status | Notes |
 |---|---|---|---|---|
